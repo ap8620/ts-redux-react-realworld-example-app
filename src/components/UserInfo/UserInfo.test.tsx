@@ -28,6 +28,7 @@ it('Should toggle favorite', async () => {
           image: null,
           following: false,
         }}
+        disabled={false}
         onFollowToggle={mockOnFollowToggle}
       />
     );
@@ -49,6 +50,7 @@ it('Should toggle favorite for followed', async () => {
           image: null,
           following: true,
         }}
+        disabled={false}
         onFollowToggle={mockOnFollowToggle}
       />
     );
@@ -70,6 +72,7 @@ it('Should trigger edit settings', async () => {
           image: null,
           following: true,
         }}
+        disabled={false}
         onEditSettings={mockOnEditSettings}
       />
     );
