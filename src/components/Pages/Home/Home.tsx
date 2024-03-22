@@ -9,6 +9,7 @@ import { ContainerPage } from '../../ContainerPage/ContainerPage';
 import { changeTab, loadTags, startLoadingTags } from './Home.slice';
 
 export function Home() {
+  console.log('anish render home');
   const { tags, selectedTab } = useStoreWithInitializer(({ home }) => home, load);
 
   return (

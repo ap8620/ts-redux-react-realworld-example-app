@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { Fragment } from 'react';
+import { Fragment, } from 'react';
 import { HashRouter, Redirect, Route, RouteProps, Switch } from 'react-router-dom';
 import { getUser } from '../../services/conduit';
 import { store } from '../../state/store';
@@ -20,6 +20,8 @@ export function App() {
   const { loading, user } = useStoreWithInitializer(({ app }) => app, load);
 
   const userIsLogged = user.isSome();
+
+
 
   return (
     <HashRouter>

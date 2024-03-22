@@ -2,6 +2,7 @@ import { Fragment } from 'react';
 import { HashRouter, NavLink } from 'react-router-dom';
 import { useStore } from '../../state/storeHooks';
 import { User } from '../../types/user';
+import SandboxButton from '../SandboxButton/SandboxButton';
 
 export function Header() {
   const { user } = useStore(({ app }) => app);
@@ -12,6 +13,7 @@ export function Header() {
         <a className='navbar-brand' href='/#/'>
           conduit
         </a>
+        <SandboxButton/>
         <ul className='nav navbar-nav pull-xs-right'>
           <HashRouter>
             <NavItem text='Home' href='/' />

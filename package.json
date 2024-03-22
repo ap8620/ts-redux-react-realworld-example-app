@@ -60,6 +60,7 @@
     "@typescript-eslint/parser": "^4.28.5",
     "cross-env": "^7.0.3",
     "eslint": "^7.32.0",
+    "miragejs": "^0.1.48",
     "pre-commit": "^1.2.2",
     "prettier": "^2.3.2"
   },
